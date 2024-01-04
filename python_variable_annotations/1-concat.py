@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """ annotated type function concat"""
 
-def concat(a: str, b str) -> str:
+def concat(str1: str, str2: str) -> str:
     """concat a + b"""
-    return a + b
+    return str1 + str2
