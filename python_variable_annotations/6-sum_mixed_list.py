@@ -4,7 +4,7 @@ from typing import List, Union
 
 
 def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
-    """sum of mixed list""""
+    """sum of mixed list"""
     sum = 0
     for num in mxd_lst:
         sum += num
