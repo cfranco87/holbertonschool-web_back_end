@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """string and int/float to tuple"""
-from typing import List, Iterable, Sequence
+from typing import Iterable, Sequence, List, Tuple
 
 
 def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
