@@ -6,6 +6,7 @@ async_comprehension = __import__('1-async_comprehension').async_comprehension
 
 
 async def measure_runtime() -> float:
+    """using async.gather to run comp 4x"""
     start_time = time()
     await asyncio.gather(
         async_comprehension(),
