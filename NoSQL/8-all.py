@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """Python func that list all docs in collection"""
+import pymongo
+
 
 def list_all(mongo_collection):
     """
@@ -7,9 +9,9 @@ def list_all(mongo_collection):
     if statement to see whats inside of mongo_collection/database
     using .find()
     """
-    list = []
+    doc_list = []
 
     if mongo_collection is not None:
-     list = list(mongo_collection.find())
+     doc_list = list(mongo_collection.find())
     
-    return list
+    return doc_list
