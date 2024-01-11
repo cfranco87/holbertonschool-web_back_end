@@ -1,2 +1,2 @@
-//script that displays # of docs in school
+// script that displays # of docs in school
 db.school.count()
