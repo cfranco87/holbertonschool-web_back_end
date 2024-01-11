@@ -1,0 +1,2 @@
+//script that kist all docs in school collection
+db.school.find()
