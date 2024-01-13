@@ -7,11 +7,8 @@ def schools_by_topic(mongo_collection, topic):
     """
     - mongo_collection: A pymongo collection object.
     - topic: The topic to search for (string).
-    - Using the find method to query documents with the specified topic
+    - $in operator, which checks if the specified value 
+    (in this case, the topic parameter) is present in the 
+    array field ("topics" field in this case)
     """
-    folder = mongo_collection({"topics": topic})
-    
-    """ Extracting the list of schools from the cursor"""
-    school_list = [document["name"] for document in folder]
-
-    return school_list
+    return mongo_collection.find({"topics": {"$in": [topic]}})
