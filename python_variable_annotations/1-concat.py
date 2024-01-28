@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" annotated type function concat"""
+"""annotated type function concat"""
 
 
 def concat(str1: str, str2: str) -> str:

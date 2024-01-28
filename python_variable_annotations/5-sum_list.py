@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
-"""finding the sum of a list"""
+"""function that takes list"""
 from typing import List
 
 
-def sum_list(input_list: List[float]) -> float:
-    """add all floats in list"""
-    sum = 0
+def sum_list(input_list: List[float])-> float:
+    """takes list of floats returns float
+    @input_list: list of floats to add up
+    return sum of list
+    """
+    result = 0
     for num in input_list:
-        sum += num
+        result += num
 
-    return sum
+    return result
