@@ -1,16 +1,12 @@
 #!/usr/bin/env python3
-"""
-function named index_range that takes two integer arguments page and page_size
-"""
+""" pagination project"""
 
 from typing import Tuple
 
 
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
-    """
-    Calculate the start and end indexes for a given page and page size.
-    """
-    start_index = (page - 1) * page_size
-    end_index = start_index + page_size
-
-    return start_index, end_index
+    """ return the start of index and the end of index corresponding
+        to th rainge of indexes """
+    start = (page - 1) * page_size
+    end = start + page_size
+    return (start, end)
